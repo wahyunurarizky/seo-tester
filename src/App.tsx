@@ -11,7 +11,6 @@ import {
   SectionMessage,
   SectionScore
 } from 'seo-content-analyzer/dist/types'
-// import SEOContentAnalyzer, { SEOResponse } from 'seo-content-analyzer'
 
 interface Form {
   title: string
