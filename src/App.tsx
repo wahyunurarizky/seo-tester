@@ -56,6 +56,7 @@ function App() {
           flexDirection: 'column'
         }}
       >
+        Indo Lang
         <Input
           placeholder="Keyword"
           crossOrigin={undefined}
