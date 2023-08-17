@@ -3,9 +3,9 @@ import 'tiny-ui/dist/styles/index.css'
 import 'react-quill/dist/quill.snow.css'
 import './App.css'
 
-import SEOContentAnalyzer from 'seo-content-analyzer/dist/client'
 import { Input } from 'tiny-ui'
 import ReactQuill from 'react-quill'
+import SEOContentAnalyzer from 'seo-content-analyzer/dist/client'
 import {
   SEOResponse,
   SectionMessage,
@@ -34,12 +34,15 @@ function App() {
 
   useEffect(() => {
     try {
-      const calc = SEOContentAnalyzer({
-        content: form.content,
-        descriptionMeta: form.metaDescription,
-        keyword: form.keyword,
-        title: form.title
-      })
+      const calc = SEOContentAnalyzer(
+        {
+          content: form.content,
+          descriptionMeta: form.metaDescription,
+          keyword: form.keyword,
+          title: form.title
+        },
+        'id'
+      )
       setResult(calc)
     } catch (error) {
       console.log(error)

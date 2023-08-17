@@ -16,7 +16,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-quill": "^2.0.0",
-    "seo-content-analyzer": "^1.1.0",
+    "seo-content-analyzer": "^1.1.3",
     "tiny-ui": "^0.0.95"
   },
   "devDependencies": {
